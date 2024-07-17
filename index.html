@@ -4,53 +4,123 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
+
+    <style>
+      .main-title {
+        font-size: 1.5rem;
+      }
+
+      #lighter {
+        margin-top: 2rem;
+        font-size: 1.2rem;
+      }
+
+      table {
+        width: 100%;
+        max-width: 1300px;
+        max-height: 1000px;
+        border-collapse: collapse;
+        margin: 2rem auto;
+      }
+
+      tr {
+        display: flex;
+      }
+
+      td {
+        margin: 0.8rem;
+      }
+
+      .topic-container {
+        max-width: 500px;
+        height: 300px;
+        border: 0.2rem solid;
+        border-radius: 1rem;
+        overflow: hidden;
+      }
+
+      .topic-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      @media screen and (max-width: 768px) {
+        .container {
+          padding: 1.2rem;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        .container {
+          padding: 1rem;
+        }
+        tr {
+          flex-wrap: wrap;
+        }
+      }
+    </style>
 
     <title>Sparkle</title>
   </head>
   <body>
-    <h1 class="titulo">Sparkle</h1>
+    <header class="icon-header">
+      <a href="index.html">
+        <img
+          src="https://cdn.icon-icons.com/icons2/3249/PNG/512/sparkle_filled_icon_200278.png"
+          alt="Sparkle icon"
+        />
+      </a>
+    </header>
 
-    <h2>Qual Galeria de Imagens você quer ver?</h2>
-    <table>
-      <tr>
-        <td>
-          <a href="JogadoresDeLoL.html">
-            <div class="topicos">
-              <div class="imagem_container">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRGoHaQ7C2qpg0B3-GXSJPzT_RxODLeUN_6w&s">
+    <div class="container">
+      <div class="main-title">
+        <h1>Sparkle</h1>
+        <p>Uma galeria de imagens brilhante!</p>
+        <p id="lighter">Explore nossas coleções</p>
+      </div>
+
+      <table>
+        <tr>
+          <td>
+            <a href="pages/league-of-legends.html">
+              <div class="topic-container">
+                <img
+                  src="https://www.adrenaline.com.br/wp-content/uploads/2024/04/League-of-Legends-vai-ganhar-modo-inspirado-por-Vampire-Survivors-1.jpg"
+                  alt="League of Legends icon"
+                />
               </div>
-              <h3 class="nome_do_topico">
-                Jogadores de League of Legends
-              </h3>
-            </div>
-          </a>
-        </td>
-        <td>
-          <a href="PresidentesDoBrasil.html">
-            <div class="topicos">
-              <div class="imagem_container">
-                <img src="https://img.elo7.com.br/product/600x380/2CABDCB/quadro-presidente-janio-quadros-tamanho-35x25-com-vidro-juscelino-kubitschek.jpg">
+            </a>
+            <h3>League of Legends</h3>
+          </td>
+          <td>
+            <a href="pages/cidades.html">
+              <div class="topic-container">
+                <img
+                  src="https://res.cloudinary.com/hello-tickets/image/upload/c_limit,f_auto,q_auto,w_1300/v1644643766/lcyhtqmsygquuczebkxh.jpg"
+                />
               </div>
-              <h3 class="nome_do_topico">
-                Presidentes do Brasil
-              </h3>
-            </div>
-          </a>
-        </td>
-        <td>
-          <a href="FotosDeAbacate.html">
-          <div class="topicos">
-            <div class="imagem_container">
-              <img src="https://mundoemrevista.com.br/wp-content/uploads/2024/02/abacate.webp">
-            </div>
-            <h3 class="nome_do_topico">
-              Fotos de Abacate
-            </h3>
-          </div>
-        </td>
-      </tr>
-    </table>
+            </a>
+            <h3>Cidades</h3>
+          </td>
+          <td>
+            <a href="pages/animais.html">
+              <div class="topic-container">
+                <img
+                  src="https://www.pedigree.com.br/sites/g/files/fnmzdf2401/files/inline-images/dia-nacional-dos-animais-01.jpg"
+                />
+              </div>
+            </a>
+            <h3>Animais</h3>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <footer>
+      <h2>Sparkle</h2>
+      <p>Por Tharik Mohamad Mourad e Mateus Cruzatto Ramos</p>
+      <p>Direitos livres &copy; 2024</p>
+    </footer>
   </body>
 </html>
